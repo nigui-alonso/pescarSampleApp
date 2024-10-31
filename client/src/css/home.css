@@ -1,0 +1,84 @@
+
+
+.hero-section {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-slider {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.slide h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+.about-us {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.about-us .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-us img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-content {
+  padding: 2rem;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  line-height: 1.6;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .about-us .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    height: 50vh;
+  }
+
+  .slide h1 {
+    font-size: 2rem;
+  }
+}
