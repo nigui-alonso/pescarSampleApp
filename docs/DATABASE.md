@@ -26,14 +26,22 @@ Si no se instaló con MongoDB:
 
 ## Configuración de Base de Datos Local
 
-1. Inicia mongo localmente desde la terminal (buscar comandos Windows)
+1. Inicia mongo localmente desde la terminal
+
+- Windows
+  ```bash
+  cd C:\Program Files\MongoDB\Server\[version]\bin
+  mongod.exe
+  ```
+
 2. Inicia MongoDB Compass
 3. Click en "New Connection"
 4. Usa la URI de conexión local: `mongodb://localhost:27017`
 5. Crea una nueva base de datos:
-   - Click en "Create Database"
-   - Database Name: `nombre-proyecto`
-   - Collection Name: `products`
+
+- Click en "Create Database"
+- Database Name: `nombre-proyecto`
+- Collection Name: `products`
 
 ## Compartir Base de Datos Local con el equipo
 
